@@ -133,7 +133,7 @@ export default function ChatApp() {
       let chunk = decoder.decode(value, { stream: true });
 
       // Clean up and normalize whitespace
-      chunk = chunk.replace(/data:\s*/g, '').replace(/\s+/g, ' ');
+     chunk = chunk.replace(/data:\s*/g, '').replace(/\r/g, '');
 
       if (chunk) {
         setMessages(prev => {
