@@ -1,37 +1,49 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 🧠 Gemini AI Chat App
 
-## Getting Started
+An interactive, streaming AI chat application built with **Next.js 14 App Router** and **Gemini AI (Google Generative AI)**. It supports real-time streaming responses, chat history, pinning conversations, local persistence, and a sleek responsive UI.
 
-First, run the development server:
+
+---
+
+## 🚀 Features
+
+- ⚡️ **Real-time AI Streaming Responses** (via `generateContentStream`)
+- 🧵 **Persistent Chat History** (stored in `localStorage`)
+- 📌 **Pin Favorite Conversations**
+- 🧠 **Memory-aware Chat UI**
+- 📱 **Mobile-friendly Design**
+- ☁️ **Edge-ready API using Next.js App Router**
+- 💾 **Local Storage Sync** for messages, pinned chats, and chat IDs
+- ☁️ **Sign in Auth with Firebase**
+
+---
+
+## 🛠️ Tech Stack
+
+| Tool               | Purpose                           |
+|--------------------|-----------------------------------|
+| [Next.js 14](https://nextjs.org/) | React framework for SSR, routing |
+| [Google Generative AI](https://ai.google.dev/) | Gemini AI for chat model |
+| [Tailwind CSS](https://tailwindcss.com/) | Styling the frontend UI |
+| [lucida React](https://lucide.dev/guide/packages/lucide-react/) | Icons (e.g., Copy, Checkmark) |
+| `localStorage`     | Persisting user chats on the client |
+| [shadcn] (https://ui.shadcn.com/) |
+
+---
+
+## 📦 Setup Instructions
+
+### 1. Clone the repo
 
 ```bash
+git clone https://github.com/hills2003/cbmo-assesment-2
+
+cd aichatbot
+
+Npm install
+
+
+create a .env.local file and add your Gemini API key:
+GEMINI_API_KEY=your_google_generative_ai_key
+
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
-"# cbmo-assesment-2" 
